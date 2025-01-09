@@ -1,11 +1,15 @@
-import React from 'react';  // This is needed if you're using React < 17
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 import { StrictMode } from 'react';
-import { createRoot } from 'react-dom/client';
+import App from './App';
+import ErrorBoundary from './ErrorBoundary.jsx';
 import './styles/LoginPage.css';
-import App from './App.jsx';
+import './styles/HomePage.css';
 
-createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
+    <ErrorBoundary>
+      <App />
+    </ErrorBoundary>
   </StrictMode>
 );

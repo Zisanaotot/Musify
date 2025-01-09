@@ -1,6 +1,7 @@
 import React from 'react';
 
-const HomePage = () => {
+const LoginPage = () => {
+
   const handleSpotifyLogin = () => {
     // Redirect user to the Spotify login page
     const clientId = '04021eb4ab4a4e66896d07b8011ac453'
@@ -46,4 +47,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default LoginPage;

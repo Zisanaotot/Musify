@@ -1,0 +1,63 @@
+:root {   /* Defines global CSS variables and styles that are inherited across entire page. :root selects highest level of the document */
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;   /* fonts available */
+  line-height: 1.5;   /* space between lines of text */
+  font-weight: 400;   /* Thickness of text */
+
+  color-scheme: dark;   /* Document supports only dark theme */
+  color: rgba(255, 255, 255, 0.87);   /* colour of text */
+  background-color: #242424;    /* sets background colour */
+
+  /* These optimize fond renderings, making them look smoother. */
+  font-synthesis: none;   
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Anchors (links) */
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+/* Body styles */
+body {
+  margin: 0;    /* Removes default margins by browser */
+  display: flex;    /* Allows control of how items are aligned and spaced within container */
+  justify-content: center;    /* Horizontally centers content in body */
+  align-items: center;    /* Vertically centers content in body */
+  min-width: 320px;   /* Sets minimum width of body so that it isn't too small */
+  min-height: 100vh;    /* Sets minimum height of body */
+  text-align: center; /* Centers text horizontally, applies on elements like paragraphs and headings */
+}
+
+/* Header1 */
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+/* Button styling */
+button {
+  border-radius: 8px;   /* Rounds the corners of the button to make them less sharp and more modern */
+  border: 1px solid transparent;    /* Initially makes border of button transparent */
+  padding: 0.6em 1.2em;   /* Adds padding inside button, makes it larger and easier to click */
+  font-size: 1em;   /* Sets button font size */
+  font-weight: 500;
+  font-family: inherit;   /* Sets button font */
+  background-color: #1a1a1a;    /* Background colour of button */
+  cursor: pointer;    /* Changes cursor to a pointer when hovering button */
+  transition: border-color 0.25s;   /* Sets transition of border colour when hovered */
+}
+button:hover {
+  border-color: #646cff;    /* Border colour when hovered */
+  outline: 1px solid #646cff;  /* Add an outline effect */
+}
+button:focus,
+button:focus-visible {
+  outline: 2px auto -webkit-focus-ring-color;   /* Outline when button is clicked */
+}

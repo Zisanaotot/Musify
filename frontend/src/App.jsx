@@ -1,13 +1,17 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import React from 'react';
-import HomePage from './pages/LoginPage';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import LoginPage from './pages/LoginPage';
+import Homepage from './pages/HomePage';
+import CallbackPage from './pages/CallbackPage';
 
-const App = () => {
+export default function App() {
     return (
-        <div>
-            <HomePage />
-        </div>
+      <BrowserRouter>
+        <Routes>
+          <Route index element={<LoginPage />} />
+          <Route path="/home" element={<Homepage />} />
+          <Route path="/callback" element={<CallbackPage />} />
+        </Routes>
+      </BrowserRouter>
     );
-};
-
-export default App;
+}
