@@ -24,7 +24,7 @@ const LoginPage = () => {
 
   return (
     <div style={{ textAlign: 'center', padding: '50px' }}>
-        <h1>Welcome to Musify</h1>
+        <h className="h1" >Welcome to Musify</h>
         <p>
             Discover, manage, and listen to your favorite Spotify playlists.
             This app lets you explore music in a whole new way!

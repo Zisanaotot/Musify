@@ -3,6 +3,7 @@ import React from 'react';
 import LoginPage from './pages/LoginPage';
 import Homepage from './pages/HomePage';
 import CallbackPage from './pages/CallbackPage';
+import UserStatsPage from './pages/UserStatsPage';
 
 export default function App() {
     return (
@@ -11,6 +12,7 @@ export default function App() {
           <Route index element={<LoginPage />} />
           <Route path="/home" element={<Homepage />} />
           <Route path="/callback" element={<CallbackPage />} />
+          <Route path="/userstats" element={<UserStatsPage />} />
         </Routes>
       </BrowserRouter>
     );

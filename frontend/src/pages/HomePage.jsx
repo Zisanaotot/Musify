@@ -1,17 +1,27 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const HomePage = () => {
-  const accessToken = localStorage.getItem('spotify_access_token');
+  const navigate = useNavigate();
 
-  const handleUserStats = () => {};
-  const handleMusicRecs = () => {};
+  const handleUserStats = () => {
+    setTimeout(() => {
+      navigate('/userstats');
+    }, 500);
+  };
+
+  const handleMusicRecs = () => {
+    setTimeout(() => {
+      navigate('/songrecs');
+    }, 500);
+  };
 
   return (
     <div style={{ padding: '50px' }}>
       <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start'}}>
         <div style={{ maxwidth: '48%' }}>
-          <h1>Check out your top tracks, artists, and albums on Spotify</h1>
-          <p1>See all your Spotify listening stats and activity! <br /> <br /> </p1>
+          <h className="h1">Check out your top tracks, artists, and albums on Spotify</h>
+          <p className="p1">See all your Spotify listening stats and activity!  <br /> </p>
           <button
             style={{
                 padding: '10px 20px',
@@ -28,8 +38,8 @@ const HomePage = () => {
           </button>
         </div>
         <div style={{ maxwidth: '48%' }}>
-          <h2>View your personalized music recommendations based on your current favourite music</h2>
-          <p2>Listen to these personalized music recommendations and simply add them to any of your Spotify playlists! <br /> <br /> </p2>
+          <h className="h2">View your personalized music recommendations based on your current favourite music</h>
+          <p className="p2">Listen to these personalized music recommendations and simply add them to any of your Spotify playlists! <br /> </p>
           <button
             style={{
               padding: '10px 20px',

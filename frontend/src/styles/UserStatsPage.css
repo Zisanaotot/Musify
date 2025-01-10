@@ -1,0 +1,43 @@
+h1 {
+  position: fixed;
+  top: 1%; /* Place it at the top of the page */
+  left: 50%; /* Move it to the horizontal center */
+  transform: translateX(-50%); /* Offset it by half of its width so that its truly centered */
+  padding-bottom: 25px;
+  font-size: 4em;
+  text-align: center; /* Ensure the text is centered within the element */
+  margin: 0;
+}
+
+.p1 {
+  position: fixed;
+  top:10%;
+  left:25%;
+  font-weight: bold;
+}
+
+.option-button {
+  position: fixed;
+  top: 11.5%;
+  left: 40%;
+  padding: 11.5px 20px;
+  margin-right: 65px;
+  font-size: 16px;
+  background-color: #1DB954;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+/* When the button is selected, add the background and border */
+.option-button.selected {
+  background-color: #1ed760; /* Make the selected button a different shade */
+  outline: 3px solid white;
+}
+
+
+
+
