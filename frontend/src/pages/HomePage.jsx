@@ -8,14 +8,11 @@ const HomePage = () => {
 
   return (
     <div style={{ padding: '50px' }}>
-        <h1>Check out your top tracks, artists, and albums on Spotify - Or view your personalized music recommendations based on your current favourite music</h1>
-        <p1 style={{padding: '25px', textAlign: 'left'}}>
-            See all your Spotify listening stats and activity!
-        </p1>
-        <p2 style ={{padding: '25px', textAlign: 'right'}}>
-            Listen to these personalized music recommendations and simply add them to any of your Spotify playlists!
-        </p2>
-        <button
+      <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start'}}>
+        <div style={{ maxwidth: '48%' }}>
+          <h1>Check out your top tracks, artists, and albums on Spotify</h1>
+          <p1>See all your Spotify listening stats and activity! <br /> <br /> </p1>
+          <button
             style={{
                 padding: '10px 20px',
                 fontSize: '16px',
@@ -26,10 +23,14 @@ const HomePage = () => {
                 cursor: 'pointer',
             }}
             onClick={handleUserStats}
-        >
-            My Spotify Stats
-        </button>
-        <button
+          >
+              My Spotify Stats
+          </button>
+        </div>
+        <div style={{ maxwidth: '48%' }}>
+          <h2>View your personalized music recommendations based on your current favourite music</h2>
+          <p2>Listen to these personalized music recommendations and simply add them to any of your Spotify playlists! <br /> <br /> </p2>
+          <button
             style={{
               padding: '10px 20px',
               fontSize: '16px',
@@ -40,9 +41,11 @@ const HomePage = () => {
               cursor: 'pointer',
             }}
             onClick={handleMusicRecs}
-        >
-          My Music Recommendations
-        </button>
+          >
+            My Music Recommendations
+          </button>
+        </div>
+      </div>
     </div>
   );
 
